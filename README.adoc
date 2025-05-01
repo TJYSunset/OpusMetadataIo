@@ -1,0 +1,4 @@
+Buggy, naive, undocumented, unsupported, use at your own risk
+
+* The "O" part of "IO" isn't currently implemented
+* Doesn't support chained OGG streams yet
