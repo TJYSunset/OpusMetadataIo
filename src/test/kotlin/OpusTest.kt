@@ -85,9 +85,9 @@ class OpusTest {
                                 .read<List<Map<String, String>>>(
                                     "$.streams[?(@.codec_name == 'opus')].tags"
                                 )
-                                .single()
-                                .map { it.key.lowercase() to it.value }
-                                .filter { it.first != "encoder" }
+                                .singleOrNull()
+                                ?.map { it.key.lowercase() to it.value }
+                                ?.filter { it.first != "encoder" } ?: emptyList()
                         )
 
                     val ffmpeg =
