@@ -27,6 +27,4 @@ tasks.test {
     testLogging { events("passed", "skipped", "failed") }
 }
 
-kotlin { jvmToolchain(8) }
-
 ktfmt { kotlinLangStyle() }
