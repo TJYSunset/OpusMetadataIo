@@ -30,8 +30,8 @@ import kotlin.time.Duration.Companion.milliseconds
 @Suppress("unused") const val VORBIS_COMMENT_UNOFFICIAL_DISCNUMBER = "discnumber"
 @Suppress("unused")
 val VORBIS_COMMENT_UNOFFICIAL_COMMENT = setOf(VORBIS_COMMENT_DESCRIPTION, "comment")
-@Suppress("unused")
-val VORBIS_COMMENT_UNOFFICIAL_LYRICS: Set<String> = setOf("lyrics", "unsyncedlyrics")
+@Suppress("unused") val VORBIS_COMMENT_UNOFFICIAL_LYRICS = setOf("lyrics", "unsyncedlyrics")
+@Suppress("unused") val VORBIS_COMMENT_UNOFFICIAL_YEAR = setOf(VORBIS_COMMENT_DATE, "year")
 
 data class OpusMetadata(
     val vendorString: String,
